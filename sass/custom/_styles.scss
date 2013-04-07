@@ -1,0 +1,178 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+html {
+	background: #FFFFFF;
+}
+
+
+body {
+	font-family: 'Georgia', serif; font-size: 17px; color: #000;
+	max-width: 750px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+
+	a:hover { color: #3b185f; background: #f9f8fa; }
+
+	> header {
+		background: #FFFFFF;
+        padding-top: .5em;
+		h1 {
+			a, a:visited, a:hover {
+				color: #8C8C8C;
+			}
+		}
+	}
+
+	> nav {
+		background: #FFFFFF;
+		font-size: 20px;
+		border-bottom: 1px solid #F2F2F2;
+		padding-left: 0px;
+		padding-right: 0px;
+
+		a {
+           text-decoration: none;
+           font-size: 22px;
+           padding-left: 10px;
+           padding-right: 10px;
+        }
+		form .search {
+			border-radius: 0.2em 0.2em 0.2em 0.2em;
+			box-shadow: none;
+			border: 0px;
+			padding-top: 0.3em;
+			padding-bottom: 0.3em;
+			padding-left: 0.5em;
+			padding-right: 0.5em;
+		}
+
+		li + li {
+			border-left: 0px;
+
+			a {
+				border: 0px;
+			}
+		}
+	}
+
+	> div {
+		background: #FFFFFF;
+		border-bottom: 0px;
+
+		> div {
+			background: #FFFFFF;
+			border-right-width: 0px;
+		}
+	}
+
+	> footer {
+	    text-align: center;
+		background: #FFFFFF;
+		text-shadow: none;
+		color: #888;
+	  	padding-left: 0;
+	  	padding-right: 0;
+		border-top: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+		font-size: 15px;
+	}
+
+	#content {
+		> article {
+		    padding-top: 2em;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+
+		> div {
+			> article, > section {
+				padding-left: 0px;
+				padding-right: 0px;
+			}	
+		}
+	}
+}
+
+article {
+
+	.entry-content {
+		h3 {
+			font-style: italic
+		}
+	}
+
+	ul, ol {
+		margin-left: 2em;
+	}
+
+	a, a:visited {
+		color: #1863A1;
+	}
+}
+
+#content {
+	div.pagination {
+		margin: 0 10px;  
+		padding-bottom: 1.5em;
+		margin-top: 4em;
+		position: relative;
+		text-align: center;		
+		border-top: dotted 1px #D1D1D1;
+		border-bottom: dotted 1px #D1D1D1;
+		color: #888;
+	}
+
+	div.pagination a {
+		color: #888;
+	}	
+
+	.blog-index {
+		article {
+			padding-top: 2em;
+
+			header {
+                padding-top: 2em;
+				padding-left: 0;
+  				padding-right: 0;
+			}
+		}
+
+		h1 {
+			a {
+				font-weight: 400;
+			}
+
+			a:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.hentry {
+		h1.entry-title {
+			font-weight: 400;
+			font-size: 2.2em;
+		}
+	}
+	
+}
+
+figure.code {
+	.highlight {
+		background: #fafafa !important;
+
+		.gutter {
+			display: none;
+		}
+	}
+}
+
+.pre-code, html .gist .gist-file .gist-syntax .highlight pre, .highlight code {
+	background: #fafafa !important;
+}
+
+aside {
+	display: none;
+}
