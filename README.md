@@ -8,6 +8,6 @@ View the live theme [here](http://www.mherman.org).
 Install
 -------
     $ cd octopress
-    $ git clone git://github.com/mjhea0/whiterspace.git .themes/whitespace
+    $ git clone git://github.com/mjhea0/whiterspace.git .themes/whiterspace
     $ rake install['whiterspace']
     $ rake generate && rake deploy
