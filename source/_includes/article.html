@@ -1,10 +1,18 @@
 {% unless page.no_header %}
   <header>
-    {% if index %}
+  {% if index %}
+    {% if post.external-url %}
+      <h1 class="entry-title"><a href="{{ post.external-url }}">{% if site.titlecase %}{{ post.title | titlecase }} {% else %}{{ post.title }}{% endif %}</a> {% if post.external-url %}<a href="{{ root_url }}{{ post.url }}">&#8734;</a> {% endif %}</h1>
+      {% else %}
       <h1 class="entry-title"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
-    {% else %}
+      {% endif %}
+      {% else %}
+    {% if page.external-url %}
+      <h1 class="entry-title"><a href="{{ page.external-url }}">{% if site.titlecase %}{{ page.title | titlecase }} {% else %}{{ page.title }}{% endif %}</a> &#8734;</h1>
+      {% else %}
       <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
     {% endif %}
+  {% endif %}
     {% unless page.meta == false %}
       <p class="meta">
         {% include post/date.html %}{{ time }}
