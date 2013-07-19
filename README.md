@@ -11,3 +11,8 @@ Install
     $ git clone git://github.com/mjhea0/whiterspace.git .themes/whiterspace
     $ rake install['whiterspace']
     $ rake generate && rake deploy
+    
+To do
+-----
+
+Fix the damn search
