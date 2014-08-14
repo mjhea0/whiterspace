@@ -12,11 +12,10 @@ $ git clone git://github.com/mjhea0/whiterspace.git .themes/whiterspace
 $ rake install['whiterspace']
 $ rake generate && rake deploy
 ```
-    
+
 ### To do
 
-1. Fix the damn search - help! <3
-2. Add AddThis share buttons. Speaking of which ...
+1. You tell me
 
 ### Want to use AddThis share buttons?
 
