@@ -2,7 +2,7 @@
 
 Another minimal theme for [Octopress](http://octopress.org) based on [whitespace](https://github.com/lucaslew/whitespace).
 
-View the live theme [here](http://www.mherman.org).
+View the live theme [here](http://mherman.org/whiterspace/).
 
 ### Install
 
@@ -10,7 +10,7 @@ View the live theme [here](http://www.mherman.org).
 $ cd octopress
 $ git clone git://github.com/mjhea0/whiterspace.git .themes/whiterspace
 $ rake install['whiterspace']
-$ rake generate && rake deploy
+$ rake generate && rake preview
 ```
 
 ### To do
@@ -48,4 +48,3 @@ Edit "/source/_includes/post/sharing.html" ...
   <br>
 </div>
 ```
-
