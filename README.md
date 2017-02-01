@@ -48,3 +48,7 @@ Edit "/source/_includes/post/sharing.html" ...
   <br>
 </div>
 ```
+
+## Sample
+
+![](https://github.com/mjhea0/whiterspace/blob/sample/sample.png)
